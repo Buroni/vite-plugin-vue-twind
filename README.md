@@ -36,7 +36,7 @@ export default defineConfig({
 
 # Configuration
 
-### `include: string[]`
+#### `include: string[]`
 
 Default: `["**/*.ce.vue"]`
 
@@ -44,7 +44,7 @@ Glob pattern matching files that the plugin should be applied to.
 
 --------
 
-### `exclude: string[]`
+#### `exclude: string[]`
 
 Default: `[]`
 
@@ -52,7 +52,7 @@ Glob pattern matching files that the plugin should be excluded from.
 
 --------
 
-### `mode: "inject" | "emit"`
+#### `mode: "inject" | "emit"`
 
 Default: `"inject"`
 
@@ -61,7 +61,7 @@ If `"emit"` then styles will be emitted as CSS files.
 
 --------
 
-### `emittedFileName: string`
+#### `emittedFileName: string`
 
 Default: `"[name].[ext]"`
 
@@ -71,7 +71,7 @@ Note that the `[name]` and `[ext]` placeholders refer to the name and extension 
 
 --------
 
-### `twindConfig: twind.Configuration | undefined`
+#### `twindConfig: twind.Configuration | undefined`
 
 Default: `undefined`
 
