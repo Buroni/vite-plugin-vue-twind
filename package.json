@@ -31,7 +31,7 @@
     },
     "dependencies": {
         "@rollup/pluginutils": "^4.2.1",
-        "estree-walker": "2.0.2",
+        "estree-walker": "^2.0.2",
         "magic-string": "^0.26.1",
         "path": "^0.12.7"
     },
