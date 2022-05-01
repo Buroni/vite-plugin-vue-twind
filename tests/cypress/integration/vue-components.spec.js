@@ -12,9 +12,11 @@ const validateElStyles = (dataCy, hasStyles) => {
         .should("have.css", "background-color")
         .and("eq", "rgb(253, 230, 138)"); // bg-yellow-200
 
-    cy.get("@btn")
-        .should("have.css", "font-size")
-        .and("eq", hasStyles ? "24px" : "16px");
+    if (hasStyles) {
+        cy.get("@btn")
+            .should("have.css", "font-size")
+            .and("eq", "24px");
+    }
 }
 
 describe("Report rendering", () => {

@@ -19,6 +19,6 @@ div {
 }
 
 button {
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 </style>
