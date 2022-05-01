@@ -17,12 +17,10 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "14"
-      - name: Install deps
-        run: npm install
-      - name: Build
-        run: npm run build
       - name: Run Cypress tests
         run: |
+          npm install
+          npm run build
           cd tests
           npm install
           npm run dev &
