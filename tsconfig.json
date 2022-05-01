@@ -2,7 +2,9 @@
     "extends": "@tsconfig/node14/tsconfig.json",
     "include": ["src"],
     "compilerOptions": {
+        "rootDir": ".",
         "outDir": "dist",
+        "composite": true,
         "declaration": true,
         "removeComments": false
     }

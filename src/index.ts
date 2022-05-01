@@ -158,7 +158,6 @@ export default function (userOptions: Options = {}) {
     const filter = createFilter(options.include, options.exclude);
 
     setup({
-        preflight: false,
         ...options.twindConfig,
         sheet,
     });
