@@ -42,18 +42,24 @@ Default: `["**/*.ce.vue"]`
 
 Glob pattern matching files that the plugin should be applied to.
 
+--------
+
 ### `exclude: string[]`
 
 Default: `[]`
 
 Glob pattern matching files that the plugin should be excluded from.
 
+--------
+
 ### `mode: "inject" | "emit"`
 
 Default: `"inject"`
 
 If `"inject"` then extracted tailwind styles will be injected into the relevant Vue web component. 
-If `"emit"` then styles will be emitted as CSS files
+If `"emit"` then styles will be emitted as CSS files.
+
+--------
 
 ### `emittedFileName: string`
 
@@ -62,6 +68,8 @@ Default: `"[name].[ext]"`
 If `mode` is `"emit"` then this format will be used to generate the CSS files.
 
 Note that the `[name]` and `[ext]` placeholders refer to the name and extension of the relevant Vue component file. The `.css` extension is added automatically.
+
+--------
 
 ### `twindConfig: twind.Configuration | undefined`
 
