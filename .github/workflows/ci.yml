@@ -19,9 +19,9 @@ jobs:
           node-version: "14"
       - name: Run server
         run: |
-        cd tests
-        npm i
-        npm run dev
+          cd tests
+          npm i
+          npm run dev
       - name: Run Cypress tests
         run: |
           npm install
