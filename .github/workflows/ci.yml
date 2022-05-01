@@ -21,12 +21,10 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: Install test deps
+      - name: Run Cypress tests
         run: |
           cd tests
           npm install
-      - name: Run Cypress tests
-        run: |
           npm run dev &
           npm run test
           lsof -t -i tcp:3000 | xargs kill
