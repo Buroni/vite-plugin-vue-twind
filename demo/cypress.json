@@ -1,0 +1,8 @@
+{
+    "viewportWidth": 1680,
+    "viewportHeight": 1050,
+    "defaultCommandTimeout": 8000,
+    "baseUrl": "http://localhost:3000",
+    "includeShadowDom": true,
+    "video": false
+}
